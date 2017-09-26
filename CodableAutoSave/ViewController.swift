@@ -1,25 +1,26 @@
-//
-//  ViewController.swift
-//  CodableAutoSave
-//
-//  Created by LINDSAY, BRETT D [AG/1000] on 9/20/17.
-//  Copyright © 2017 Brett Lindsay. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var firstNameTextField: UITextField!
+    @IBOutlet weak var lastNameTextField: UITextField!
+    
+    let formModel = AppDelegate.appSession.formModel
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        formModel.delegate = self
     }
+}
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+extension ViewController: FormModelDelegate {
+    func storedDataLoaded(firstName: String?, lastName: String?) {
+        firstNameTextField.text = firstName
+        lastNameTextField.text = lastName
     }
-
-
+    
+    func dataToSave() -> FormModel.SaveableData {
+        return FormModel.SaveableData(firstNameText: firstNameTextField.text, lastNameText: lastNameTextField.text)
+    }
 }
 

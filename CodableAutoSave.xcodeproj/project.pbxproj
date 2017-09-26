@@ -13,6 +13,8 @@
 		9FAC10D31F7324F000FFEEDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FAC10D21F7324F000FFEEDE /* Assets.xcassets */; };
 		9FAC10D61F7324F000FFEEDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FAC10D41F7324F000FFEEDE /* LaunchScreen.storyboard */; };
 		9FAC10E11F7324F000FFEEDE /* CodableAutoSaveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAC10E01F7324F000FFEEDE /* CodableAutoSaveTests.swift */; };
+		9FAC10ED1F73253100FFEEDE /* FormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAC10EC1F73253100FFEEDE /* FormModel.swift */; };
+		9FAC10F11F732F7B00FFEEDE /* AppSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FAC10F01F732F7B00FFEEDE /* AppSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		9FAC10DC1F7324F000FFEEDE /* CodableAutoSaveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodableAutoSaveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FAC10E01F7324F000FFEEDE /* CodableAutoSaveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableAutoSaveTests.swift; sourceTree = "<group>"; };
 		9FAC10E21F7324F000FFEEDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FAC10EC1F73253100FFEEDE /* FormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormModel.swift; sourceTree = "<group>"; };
+		9FAC10F01F732F7B00FFEEDE /* AppSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +81,12 @@
 		9FAC10CA1F7324F000FFEEDE /* CodableAutoSave */ = {
 			isa = PBXGroup;
 			children = (
-				9FAC10CB1F7324F000FFEEDE /* AppDelegate.swift */,
 				9FAC10CD1F7324F000FFEEDE /* ViewController.swift */,
 				9FAC10CF1F7324F000FFEEDE /* Main.storyboard */,
-				9FAC10D21F7324F000FFEEDE /* Assets.xcassets */,
-				9FAC10D41F7324F000FFEEDE /* LaunchScreen.storyboard */,
+				9FAC10EC1F73253100FFEEDE /* FormModel.swift */,
 				9FAC10D71F7324F000FFEEDE /* Info.plist */,
+				9FAC10EB1F7324FC00FFEEDE /* Supporting Files */,
+				9FAC10F01F732F7B00FFEEDE /* AppSession.swift */,
 			);
 			path = CodableAutoSave;
 			sourceTree = "<group>";
@@ -94,6 +98,16 @@
 				9FAC10E21F7324F000FFEEDE /* Info.plist */,
 			);
 			path = CodableAutoSaveTests;
+			sourceTree = "<group>";
+		};
+		9FAC10EB1F7324FC00FFEEDE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9FAC10CB1F7324F000FFEEDE /* AppDelegate.swift */,
+				9FAC10D21F7324F000FFEEDE /* Assets.xcassets */,
+				9FAC10D41F7324F000FFEEDE /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +213,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FAC10F11F732F7B00FFEEDE /* AppSession.swift in Sources */,
+				9FAC10ED1F73253100FFEEDE /* FormModel.swift in Sources */,
 				9FAC10CE1F7324F000FFEEDE /* ViewController.swift in Sources */,
 				9FAC10CC1F7324F000FFEEDE /* AppDelegate.swift in Sources */,
 			);
